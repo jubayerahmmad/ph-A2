@@ -1,12 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaushan+Script&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+/* shared styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.display-flex {
+  display: flex;
 }
 
 /* font-family: "Kaushan Script", cursive; */
+
+/* header styels  */
+/* nav styles  */
+
+header {
+  background-color: #212121;
+}
+
+.navbar {
+  padding: 10px;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  align-items: center;
+}
+nav h2 {
+  color: rgb(230, 83, 60);
+  font-weight: 600;
+  font-size: 40px;
+}
+
+nav ul {
+  list-style: none;
+}
+.nav-options{
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    padding: 10px 15px; 
+    text-align: center;
+    border-radius: 45px;
+}
+.home{
+  background-color: rgb(230, 83, 60);
+  border-radius: 45px;
+  padding: 5px 15px;
+}
+.home:hover{
+  background-color: rgb(255, 255, 255, 0.1);
+  color: rgb(230, 83, 60);
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 24px;
+  color: #ffffff;
+}
+
+nav ul li a:hover{
+  background-color: rgb(230, 83, 60);
+  border-radius: 45px;
+  padding: 5px 15px;
+}
+.menu{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive  */
+
+@media screen and (max-width: 576px) {
+  .navbar{
+    padding: 15px 0;
+  }
+  .nav-options{
+    display: none;
+  }
+  .menu{
+    display: block;
+    color: white;
+   font-size: 30px;
+  }
+}
