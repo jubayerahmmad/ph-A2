@@ -105,7 +105,7 @@ nav ul li a:hover{
 }
 
 
-.banner-button{
+.button{
   background-color: rgb(230, 83, 60);
   color: white;
   padding: 10px 20px;
@@ -114,12 +114,12 @@ nav ul li a:hover{
   cursor: pointer;
 }
 
-.banner-button:hover{
+.button:hover{
   background-color: rgb(255, 255, 255, 0.1);
   color: rgb(230, 83, 60);
 }
 
-.banner-button-secondary{
+.button-secondary{
   background-color: rgb(255, 255, 255, 0.1);
   color: white ;
   padding: 10px 20px;
@@ -129,7 +129,7 @@ nav ul li a:hover{
   cursor: pointer;
 }
 
-.banner-button-secondary:hover{
+.button-secondary:hover{
   background-color: white;
   color: rgb(230, 83, 60);
 }
@@ -192,6 +192,7 @@ nav ul li a:hover{
 main{
   max-width: 80%;
   margin: 0 auto;
+  color: white
 }
 
 
@@ -220,8 +221,7 @@ main{
   border-radius: 20px;
   padding: 30px;
   line-height: 30px;
-  box-shadow: 0px 2px 4px rgba(228, 222, 222, 0.842);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(34, 34, 34);
   text-align: center;
 }
 .service-card h3{
@@ -234,8 +234,103 @@ main{
 .service-icon{
   font-size: 1.8rem;
   margin-bottom: 20px;
-
 }
+.service-icon i{
+  color: rgb(230, 83, 60);
+}
+
+/* change habits styles  */
+
+.change-habits-title{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 30px 0;
+  text-align: center;
+}
+.change-habits-desc{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  opacity: .6;
+}
+.change-habits-card{
+  max-width: 350px;
+  margin: 30px 0;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgba(97, 61, 61, 0.014);
+  text-align: center;
+}
+.change-habits-img img{
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card-desc h3{
+  font-size: 1.5rem;
+  margin: 20px ;
+}
+.card-desc p{
+  opacity: .5;
+  margin-top: 10px;
+}
+.change-habits-content{
+  justify-content: space-between;
+}
+
+/* run section styles  */
+
+.run-section{
+  background-color: rgb(34, 34, 34) ;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.run-content{
+  width: 40%;
+  align-items: center;
+  margin: 70px;
+}
+
+.run-title{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.run-desc{
+  font-size: 1.2rem;
+  opacity: .5;
+  margin-bottom: 30px;
+}
+.run-image{
+  width: 50%;
+}
+.run-image img{
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,11 +391,33 @@ main{
     top: 85%;
     left: 78%;
   }
-
-
   .services-content{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .change-habits-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .run-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .run-content{
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .run-image{
+    width: 100%;
+  }
+  .run-image img{
+    width: 100%;
+    margin-left: 0;
   }
 }
