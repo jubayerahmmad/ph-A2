@@ -468,9 +468,51 @@ td{
 
 
 
+/* footer section  */
 
+footer{
+  width: 100%;
+  background-color: #333131;
+}
 
+.footer-container{
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 80px;
+}
+.footer-content{
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+}
+.footer-left, .footer-right, .footer-center{
+  width: 25%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-left h2{
+  font-size: 55px;
+  margin-bottom: 20px;
+  color: rgb(230, 83, 60);
+}
+.footer-left p, .footer-center p , .footer-right p{
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
 
+.footer-center h2, .footer-right h2{
+  font-size: 35px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.copyright p{
+  margin-top: 20px;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+}
 
 
 
@@ -535,7 +577,7 @@ td{
     position: relative;
   }
   .banner-image-content {
-    top: 105%;
+    top: 100%;
     left: 25%;
   }
   .banner-image-content-2 {
@@ -591,5 +633,19 @@ td{
   .team-member img{
     width: 100%;
     height: auto;
+  }
+  .footer-container{
+    padding: 20px;
+    max-width: 100%;
+    margin: 0;
+  }
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-left, .footer-right, .footer-center{
+    width: 100%;
+    padding: 20px;
   }
 }
