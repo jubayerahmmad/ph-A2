@@ -159,6 +159,7 @@
           </div>
         </div>
       </section>
+      
       <section class="change-habits-section">
         <h2 class="change-habits-title">Change Your Habits</h2>
         <div class="change-habits-desc">
@@ -249,6 +250,83 @@
         </div>
       </section>
 
+      <section class="bmi-calculator-section">
+        <div class="bmi-calc-heading">
+          <h2 class="bmi-calculator-title">BMI Calculator</h2>
+        <p class="bmi-calc-desc">
+          Calculate your body mass index (BMI) to help you understand your weight status.
+          BMI is calculated using your weight (in kilograms) and height (in meters).
+        </p>
+        </div>
+
+        <div class="bmi-calc-container display-flex">
+          <div class="bmi-calc-table">
+            <h2 class="table-title"> BMI Calculator</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>BMI </th>
+                  <th>Weight Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30 or greater</td>
+                  <td>Obese</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+  
+  
+  
+          <div class="bmi-calculator-content">
+            <h2 class="bmi-result-title">Calculate Your BMI</h2>
+            <p class="bmi-result-desc">
+              Enter your weight and height, and choose your gender and activity factor.
+              Your BMI will be displayed below.
+            </p>
+            <div class="input-types-container">
+            <div>
+              <input type="number" id="weight" placeholder="Weight (kg)">
+            </div>
+            <div>
+              <input type="number" id="height" placeholder="Height (cm)">
+            </div>
+            <div>
+              <input type="text" placeholder="Age">
+            </div>
+            <div>
+              <select name="gender" id="gender">
+                <option value="none">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div>
+              <select name="factor" id="factor">
+                <option value="none">Select an activity Factor</option>
+              </select>
+            </div>
+            </div>
+            <button class="button">Calculate BMI</button>
+          </div>
+        </div>
+
+      </section>
 
 
 
