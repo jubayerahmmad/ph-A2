@@ -417,10 +417,54 @@ td{
   cursor: pointer;
 }
 
+/* team section  */
+
+.meet-our-team-section{
+  max-width: 80%;
+  margin: 40px auto;
+}
 
 
+.section-heading{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.meet-our-team-title{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.meet-our-team-desc{
+  font-size: 1rem;
+  opacity: 0.4;
+  margin-bottom: 30px;
+}
+.meet-our-team-content{
+  background-color: #33313170;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center; 
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
+.team-member{
+  position: relative;
+}
 
+.team-member img {
+  width: 480px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.team-member-desc{
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  padding: 10px;
+}
 
 
 
@@ -539,5 +583,13 @@ td{
   }
   .bmi-calculator-content {
     width: 100%
+  }
+
+  .meet-our-team-content{
+    grid-template-columns: 1fr;
+  }
+  .team-member img{
+    width: 100%;
+    height: auto;
   }
 }
