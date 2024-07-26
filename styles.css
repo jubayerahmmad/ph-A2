@@ -21,6 +21,22 @@ body {
   font-family: "Kaushan Script", cursive;
 }
 
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-heading h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.section-heading p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0.6;
+}
+
 /* header styels  */
 /* nav styles  */
 
@@ -196,23 +212,14 @@ main {
   color: #ffffff;
 }
 
-.service-title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 30px 0;
-  text-align: center;
-}
-
 .services-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .service-card {
   width: 100%;
-  max-width: 350px;
-  margin: 30px auto;
   border-radius: 20px;
   padding: 30px;
   line-height: 30px;
@@ -236,24 +243,12 @@ main {
 
 /* change habits styles  */
 
-.change-habits-section{
+.change-habits-section {
   max-width: 80%;
   margin: 0 auto;
   color: #ffffff;
 }
 
-.change-habits-title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 30px 0;
-  text-align: center;
-}
-.change-habits-desc {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 20px;
-  opacity: 0.6;
-}
 .change-habits-card {
   max-width: 350px;
   margin: 30px 0;
@@ -319,23 +314,8 @@ main {
 
 /* bmi calculator styles  */
 
-
-.bmi-calculator-section{
+.bmi-calculator-section {
   max-width: 100%;
-}
-.bmi-calc-heading {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.bmi-calculator-title {
-  font-size: 2rem;
-  font-weight: 600;
-}
-.bmi-calc-desc {
-  font-size: 1.2rem;
-  opacity: 0.5;
-  margin-top: 10px;
 }
 
 .bmi-calc-container {
@@ -352,7 +332,7 @@ main {
   text-align: left;
   margin-top: 20px;
 }
-.table-title{
+.table-title {
   font-weight: 600;
   margin-bottom: 50px;
   margin-top: 20px;
@@ -366,13 +346,14 @@ table {
   font-size: 18px;
 }
 
-td, th {
+td,
+th {
   border: 1px solid rgba(255, 255, 255, 0.5);
   text-align: center;
   padding: 8px;
 }
-td{
-  opacity: .6;
+td {
+  opacity: 0.6;
 }
 .bmi-calculator-content {
   width: 50%;
@@ -380,23 +361,25 @@ td{
   margin-top: 20px;
 }
 
-.bmi-result-title{
+.bmi-result-title {
   font-weight: 600;
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 25px;
 }
-.bmi-result-desc{
+.bmi-result-desc {
   font-size: 1rem;
   opacity: 0.5;
   margin-bottom: 20px;
 }
-.input-types-container{
+.input-types-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.bmi-calculator-content input[type="number"], input[type="text"], select {
+.bmi-calculator-content input[type="number"],
+input[type="text"],
+select {
   width: 98%;
   padding: 10px;
   border: none;
@@ -405,7 +388,7 @@ td{
   margin-right: 10px;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.363);
+  color: rgba(255, 255, 255, 0.267);
 }
 
 .bmi-calculator-content button {
@@ -419,37 +402,23 @@ td{
 
 /* team section  */
 
-.meet-our-team-section{
+.meet-our-team-section {
   max-width: 80%;
   margin: 40px auto;
 }
 
-
-.section-heading{
-  text-align: center;
-  margin-bottom: 20px;
-}
-.meet-our-team-title{
-  font-size: 3rem;
-  font-weight: 800;
-}
-.meet-our-team-desc{
-  font-size: 1rem;
-  opacity: 0.4;
-  margin-bottom: 30px;
-}
-.meet-our-team-content{
+.meet-our-team-content {
   background-color: #33313170;
   padding: 20px;
   border-radius: 20px;
-  text-align: center; 
+  text-align: center;
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.team-member{
+.team-member {
   position: relative;
 }
 
@@ -459,78 +428,63 @@ td{
   border-radius: 20px;
 }
 
-.team-member-desc{
+.team-member-desc {
   position: absolute;
   bottom: 25px;
   left: 30px;
   padding: 10px;
 }
 
-
-
 /* footer section  */
 
-footer{
+footer {
   width: 100%;
   background-color: #333131;
 }
 
-.footer-container{
+.footer-container {
   max-width: 80%;
   margin: 0 auto;
   padding: 80px;
 }
-.footer-content{
+.footer-content {
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.151);
 }
-.footer-left, .footer-right, .footer-center{
+.footer-left,
+.footer-right,
+.footer-center {
   width: 25%;
   padding: 20px;
   align-items: center;
   justify-content: center;
 }
-.footer-left h2{
+.footer-left h2 {
   font-size: 55px;
   margin-bottom: 20px;
   color: rgb(230, 83, 60);
 }
-.footer-left p, .footer-center p , .footer-right p{
+.footer-left p,
+.footer-center p,
+.footer-right p {
   color: white;
   opacity: 0.5;
   margin-bottom: 20px;
 }
 
-.footer-center h2, .footer-right h2{
+.footer-center h2,
+.footer-right h2 {
   font-size: 35px;
   color: white;
   margin-bottom: 10px;
 }
 
-.copyright p{
+.copyright p {
   margin-top: 20px;
   color: white;
   opacity: 0.5;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* mobile responsive  */
 
@@ -558,9 +512,9 @@ footer{
   .banner-content {
     width: 100%;
     padding: 10px 20px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
   .banner-title {
     font-size: 2rem;
@@ -574,20 +528,19 @@ footer{
   }
   .banner-image img {
     margin-left: 0px;
+    width: 300px;
     position: relative;
   }
   .banner-image-content {
-    top: 120%;
+    top: 115%;
     left: 25%;
   }
   .banner-image-content-2 {
-    top: 95%;
+    top: 90%;
     left: 75%;
   }
   .services-content {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
   .change-habits-content {
     flex-direction: column;
@@ -619,32 +572,34 @@ footer{
     justify-content: center;
     width: 100%;
   }
-  .bmi-calc-table{
+  .bmi-calc-table {
     width: 100%;
     margin-top: 20px;
   }
   .bmi-calculator-content {
-    width: 100%
+    width: 100%;
   }
 
-  .meet-our-team-content{
+  .meet-our-team-content {
     grid-template-columns: 1fr;
   }
-  .team-member img{
+  .team-member img {
     width: 100%;
     height: auto;
   }
-  .footer-container{
+  .footer-container {
     padding: 20px;
     max-width: 100%;
     margin: 0;
   }
-  .footer-content{
+  .footer-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .footer-left, .footer-right, .footer-center{
+  .footer-left,
+  .footer-right,
+  .footer-center {
     width: 100%;
     padding: 20px;
   }
