@@ -573,15 +573,15 @@ footer{
     margin-bottom: 10px;
   }
   .banner-image img {
-    margin-left: 5px;
+    margin-left: 0px;
     position: relative;
   }
   .banner-image-content {
-    top: 100%;
+    top: 120%;
     left: 25%;
   }
   .banner-image-content-2 {
-    top: 85%;
+    top: 95%;
     left: 75%;
   }
   .services-content {
