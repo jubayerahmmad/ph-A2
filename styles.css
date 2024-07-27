@@ -63,7 +63,7 @@ nav ul {
 }
 .nav-options {
   border: 1px solid rgba(255, 255, 255, 0.089);
-  padding: 10px 15px;
+  padding: 10px;
   text-align: center;
   border-radius: 45px;
 }
@@ -71,6 +71,7 @@ nav ul {
   background-color: rgb(230, 83, 60);
   border-radius: 45px;
   padding: 5px 15px;
+
 }
 .home:hover {
   background-color: rgb(255, 255, 255, 0.1);
@@ -134,17 +135,17 @@ nav ul li a:hover {
 
 .button-secondary {
   background-color: rgb(255, 255, 255, 0.1);
-  color: white;
+  color: rgb(230, 83, 60);
   padding: 10px 20px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.192);
   border-radius: 45px;
   margin-top: 20px;
   cursor: pointer;
 }
 
 .button-secondary:hover {
-  background-color: white;
-  color: rgb(230, 83, 60);
+  background-color: rgb(230, 83, 60);
+  color: white;
 }
 
 .banner-image {
@@ -176,6 +177,12 @@ nav ul li a:hover {
   border-radius: 50%;
   height: 45px;
   width: 45px;
+}
+.circle p i{
+  font-size: 2rem;
+  line-height: 45px;
+  margin-left: 13px;
+  color: white;
 }
 
 .img-content p,
@@ -254,11 +261,11 @@ main {
   margin: 30px 0;
   border-radius: 20px;
   padding: 30px;
-  background-color: rgba(97, 61, 61, 0.014);
+  background-color: rgba(252, 252, 252, 0.014);
   text-align: center;
 }
 .change-habits-img img {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.308);
   border-radius: 50%;
 }
 .card-desc h3 {
@@ -337,18 +344,18 @@ main {
   margin-bottom: 50px;
   margin-top: 20px;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.8rem;
 }
 table {
   border-collapse: collapse;
   width: 80%;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 td,
 th {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.151);
   text-align: center;
   padding: 8px;
 }
@@ -386,7 +393,7 @@ select {
   border-radius: 5px;
   margin-bottom: 10px;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.267);
 }
@@ -435,6 +442,15 @@ select {
   padding: 10px;
 }
 
+.team-member-desc h3 {
+  font-size: 1.6rem;
+}
+
+.team-member-desc p {
+  font-size: 1rem;
+  opacity: .6;
+}
+
 /* footer section  */
 
 footer {
@@ -460,7 +476,7 @@ footer {
   justify-content: center;
 }
 .footer-left h2 {
-  font-size: 55px;
+  font-size: 2.8rem;
   margin-bottom: 20px;
   color: rgb(230, 83, 60);
 }
@@ -474,9 +490,21 @@ footer {
 
 .footer-center h2,
 .footer-right h2 {
-  font-size: 35px;
+  font-size: 2.5rem;
   color: white;
   margin-bottom: 10px;
+}
+.social-media-icons{
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.social-media-icons i {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.534);
+}
+.social-media-icons i:hover{
+  color: rgb(230, 83, 60);
 }
 
 .copyright p {
@@ -532,12 +560,16 @@ footer {
     position: relative;
   }
   .banner-image-content {
-    top: 115%;
+    width: 170px;
+    height: 100px;
+    top: 85%;
     left: 25%;
   }
   .banner-image-content-2 {
-    top: 90%;
-    left: 75%;
+    width: 170px;
+    height: 110px;
+    top: 70%;
+    left: 65%;
   }
   .services-content {
     grid-template-columns: 1fr;
@@ -604,3 +636,4 @@ footer {
     padding: 20px;
   }
 }
+
