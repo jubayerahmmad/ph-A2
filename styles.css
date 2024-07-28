@@ -71,7 +71,6 @@ nav ul {
   background-color: rgb(230, 83, 60);
   border-radius: 45px;
   padding: 5px 15px;
-
 }
 .home:hover {
   background-color: rgb(255, 255, 255, 0.1);
@@ -178,7 +177,7 @@ nav ul li a:hover {
   height: 45px;
   width: 45px;
 }
-.circle p i{
+.circle p i {
   font-size: 2rem;
   line-height: 45px;
   margin-left: 13px;
@@ -210,42 +209,6 @@ nav ul li a:hover {
 
 main {
   color: white;
-}
-
-/* services sections styles  */
-.services {
-  max-width: 80%;
-  margin: 0 auto;
-  color: #ffffff;
-}
-
-.services-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.service-card {
-  width: 100%;
-  border-radius: 20px;
-  padding: 30px;
-  line-height: 30px;
-  background-color: rgb(34, 34, 34);
-  text-align: center;
-}
-.service-card h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.service-card p {
-  opacity: 0.6;
-}
-.service-icon {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-.service-icon i {
-  color: rgb(230, 83, 60);
 }
 
 /* change habits styles  */
@@ -318,6 +281,133 @@ main {
   object-fit: cover;
   margin-left: 150px;
 }
+
+/* trainings exsercise section styles  */
+
+.trainings-and-exercise-section {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.row-1{
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+.trainings-and-exercise-card-1 p{
+  height: 300px;
+  background-color: rgba(6, 255, 209, 0.507);
+  background-image: url(./images/exercise1.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.trainings-and-exercise-card-1{
+  position: relative;
+}
+.train-ex-card1{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+
+.trainings-and-exercise-card-2{
+  position: relative;
+}
+.train-ex-card2{
+  position: absolute;
+  bottom: 240px;
+  left: 15px;
+}
+.trainings-and-exercise-card-2 p{
+  height: 300px;
+  background-color: rgba(255, 0, 0, 0.3);
+  background-image: url(./images/exercise2.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trainings-and-exercise-card-3{
+  position: relative;
+}
+.train-ex-card3{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.trainings-and-exercise-card-3 p{
+  height: 300px;
+  background-color:rgba(0, 0, 0, 0.5);
+  background-image: url(./images/exercise3.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row-2{
+  display: grid;
+  grid-template-columns: 40% 25% 35%;
+}
+
+.trainings-and-exercise-card-4{
+  position: relative;
+}
+.train-ex-card4{
+  position: absolute;
+  bottom: 240px;
+  left: 480px;
+}
+.trainings-and-exercise-card-4 p{
+  height: 300px;
+  background-color:rgba(0, 0, 0, 0.5);
+  background-image: url(./images/exercise4.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trainings-and-exercise-card-5{
+  position: relative;
+}
+.train-ex-card5{
+  position: absolute;
+  bottom: 15px;
+  left: 80px;
+}
+.trainings-and-exercise-card-5 p{
+  height: 300px;
+  background-color:rgba(68, 255, 0, 0.418);
+  background-image: url(./images/exercise5.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trainings-and-exercise-card-6{
+  position: relative;
+}
+.train-ex-card6{
+  position: absolute;
+  bottom: 10px;
+  left: 390px;
+}
+.trainings-and-exercise-card-6 p{
+  height: 300px;
+  background-color:rgba(0, 71, 255, 0.3);
+  background-image: url(./images/exercise6.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 /* bmi calculator styles  */
 
@@ -407,6 +497,82 @@ select {
   cursor: pointer;
 }
 
+/* workout routine sections  */
+
+.workout-routine-section {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.workout-routine-item {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.workout-routine-content {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.workout-routine-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.workout-routine-item ul li {
+  opacity: 0.5;
+  margin-left: 32px;
+}
+
+/* fitness tips section  */
+.fitness-tips-section {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.fitness-tips {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.fitness-tip {
+  width: 360px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.tip-content h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.tip-content p {
+  opacity: 0.6;
+  padding: 20px 0;
+}
+
+.fitness-tip img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 /* team section  */
 
 .meet-our-team-section {
@@ -448,7 +614,7 @@ select {
 
 .team-member-desc p {
   font-size: 1rem;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 /* footer section  */
@@ -494,7 +660,7 @@ footer {
   color: white;
   margin-bottom: 10px;
 }
-.social-media-icons{
+.social-media-icons {
   gap: 30px;
   margin-top: 40px;
 }
@@ -503,7 +669,7 @@ footer {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.534);
 }
-.social-media-icons i:hover{
+.social-media-icons i:hover {
   color: rgb(230, 83, 60);
 }
 
@@ -517,6 +683,13 @@ footer {
 /* mobile responsive  */
 
 @media screen and (max-width: 576px) {
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+  .section-heading p {
+    font-size: 1rem;
+  }
+
   .navbar {
     padding: 15px 20px;
     max-width: 100%;
@@ -529,6 +702,7 @@ footer {
     color: white;
     font-size: 30px;
   }
+
   .banner-section {
     padding: 0px;
     max-width: 100%;
@@ -556,29 +730,28 @@ footer {
   }
   .banner-image img {
     margin-left: 0px;
-    width: 300px;
+    width: 290px;
     position: relative;
   }
   .banner-image-content {
     width: 170px;
     height: 100px;
-    top: 85%;
+    top: 90%;
     left: 25%;
   }
   .banner-image-content-2 {
     width: 170px;
     height: 110px;
-    top: 70%;
-    left: 65%;
+    top: 80%;
+    left: 79%;
   }
-  .services-content {
-    grid-template-columns: 1fr;
-  }
+
   .change-habits-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .run-section {
     flex-direction: column;
     align-items: center;
@@ -598,6 +771,40 @@ footer {
     width: 100%;
     margin-left: 0;
   }
+
+
+
+  .trainings-and-exercise-card-2,
+  .trainings-and-exercise-card-4{
+    display: none;
+  }
+  .train-ex-card6{
+    left: 70px;
+  }
+  .train-ex-card1 h3,
+  .train-ex-card3 h3,
+  .train-ex-card5 h3,
+  .train-ex-card6 h3{
+    font-size: .8rem;
+  }
+  .trainings-and-exercise-card-1 p,
+  .trainings-and-exercise-card-3 p,
+  .trainings-and-exercise-card-5 p,
+  .trainings-and-exercise-card-6 p{
+    height: 200px;
+  }
+  .train-ex-card6 h3{
+    left: 70px;
+  }
+  .row-1 {
+    grid-template-columns: 45% 55%;
+  }
+  .row-2 {
+    grid-template-columns: 55% 45%;
+  }
+
+
+
   .bmi-calc-container {
     flex-direction: column;
     align-items: center;
@@ -612,6 +819,13 @@ footer {
     width: 100%;
   }
 
+  .fitness-tips {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fitness-tip {
+    width: 320px;
+  }
+
   .meet-our-team-content {
     grid-template-columns: 1fr;
   }
@@ -619,6 +833,7 @@ footer {
     width: 100%;
     height: auto;
   }
+
   .footer-container {
     padding: 20px;
     max-width: 100%;
@@ -636,4 +851,3 @@ footer {
     padding: 20px;
   }
 }
-
