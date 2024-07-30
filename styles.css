@@ -21,6 +21,35 @@ body {
   font-family: "Kaushan Script", cursive;
 }
 
+.button {
+  background-color: rgb(230, 83, 60);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+  color: rgb(230, 83, 60);
+}
+
+.button-secondary {
+  background-color: rgb(255, 255, 255, 0.1);
+  color: rgb(230, 83, 60);
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 45px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: rgb(230, 83, 60);
+  color: white;
+}
+
 .section-heading {
   text-align: center;
   margin-bottom: 40px;
@@ -256,8 +285,8 @@ main {
 
 .run-content {
   width: 40%;
-  align-items: center;
-  margin: 70px;
+  align-content: center;
+  margin-left: 70px;
 }
 
 .run-title {
@@ -276,10 +305,9 @@ main {
 }
 .run-image img {
   width: 80%;
-  height: 100%;
   border-radius: 20px;
   object-fit: cover;
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 /* trainings exsercise section styles  */
@@ -479,6 +507,7 @@ input[type="text"],
 select {
   width: 98%;
   padding: 10px;
+  outline: none;
   border: none;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -486,6 +515,9 @@ select {
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.267);
+}
+.select{
+  width: 99%;
 }
 
 .bmi-calculator-content button {
@@ -497,79 +529,44 @@ select {
   cursor: pointer;
 }
 
-/* workout routine sections  */
-
-.workout-routine-section {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.workout-routine-item {
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.068);
-  justify-content: start;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.workout-routine-content {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.workout-routine-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.workout-routine-item ul li {
-  opacity: 0.5;
-  margin-left: 32px;
-}
-
 /* fitness tips section  */
 .fitness-tips-section {
   max-width: 80%;
   margin: 0 auto;
 }
 
-.fitness-tips {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
 .fitness-tip {
-  width: 360px;
   height: auto;
-  border-radius: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.068);
+  display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
-  margin-bottom: 30px;
+}
+
+.tip-content{
+  width: 50%;
+  padding: 20px;
 }
 .tip-content h3 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin: 15px 0;
+}
+span{
+  color: rgb(230, 83, 60);
 }
 
 .tip-content p {
+  font-size: 1.5rem;
   opacity: 0.6;
   padding: 20px 0;
 }
 
 .fitness-tip img {
-  width: 100%;
-  height: 300px;
-  border-radius: 20px;
+  width: 50%;
+  height: 450px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -605,7 +602,6 @@ select {
   position: absolute;
   bottom: 25px;
   left: 30px;
-  padding: 10px;
 }
 
 .team-member-desc h3 {
@@ -690,6 +686,8 @@ footer {
     font-size: 1rem;
   }
 
+
+
   .navbar {
     padding: 15px 20px;
     max-width: 100%;
@@ -702,6 +700,9 @@ footer {
     color: white;
     font-size: 30px;
   }
+
+
+
 
   .banner-section {
     padding: 0px;
@@ -746,11 +747,17 @@ footer {
     left: 79%;
   }
 
+
+
+
   .change-habits-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
+
+
 
   .run-section {
     flex-direction: column;
@@ -760,8 +767,7 @@ footer {
   .run-content {
     width: 100%;
     padding: 10px 20px;
-    align-items: center;
-    justify-content: center;
+    margin: 20px;
     flex-direction: column;
   }
   .run-image {
@@ -771,6 +777,7 @@ footer {
     width: 100%;
     margin-left: 0;
   }
+
 
 
 
@@ -805,6 +812,7 @@ footer {
 
 
 
+
   .bmi-calc-container {
     flex-direction: column;
     align-items: center;
@@ -819,12 +827,38 @@ footer {
     width: 100%;
   }
 
+
+
   .fitness-tips {
     grid-template-columns: repeat(1, 1fr);
   }
   .fitness-tip {
-    width: 320px;
+    width: 340px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 10px;
   }
+  .tip-content{
+    width: 100%;
+    padding: 0;
+  }
+  .tip-content h3 {
+    font-size: 1.5rem;
+  }
+  .column{
+    flex-direction: column-reverse;
+  }
+  
+  .tip-content p {
+    font-size: 1rem;
+  }
+  .fitness-tip img{
+    height: 300px;
+    width: 100%;
+  }
+
+
+
 
   .meet-our-team-content {
     grid-template-columns: 1fr;
@@ -833,6 +867,9 @@ footer {
     width: 100%;
     height: auto;
   }
+
+
+  
 
   .footer-container {
     padding: 20px;
