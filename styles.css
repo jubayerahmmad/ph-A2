@@ -17,9 +17,6 @@ body {
   display: flex;
 }
 
-.span {
-  font-family: "Kaushan Script", cursive;
-}
 
 .button {
   background-color: rgb(230, 83, 60);
@@ -70,7 +67,7 @@ body {
 /* nav styles  */
 
 header {
-  background: #33313170;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.089) , rgba(0, 0, 0, 0.137));
 }
 
 .navbar {
@@ -135,7 +132,10 @@ nav ul li a:hover {
   margin: 0 auto;
   color: white;
 }
-
+.span {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+}
 .banner-title {
   font-size: 4rem;
   font-weight: 600;
@@ -145,35 +145,6 @@ nav ul li a:hover {
   color: white;
   font-size: 1.5rem;
   opacity: 0.4;
-}
-
-.button {
-  background-color: rgb(230, 83, 60);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 45px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: rgb(255, 255, 255, 0.1);
-  color: rgb(230, 83, 60);
-}
-
-.button-secondary {
-  background-color: rgb(255, 255, 255, 0.1);
-  color: rgb(230, 83, 60);
-  padding: 10px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.192);
-  border-radius: 45px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.button-secondary:hover {
-  background-color: rgb(230, 83, 60);
-  color: white;
 }
 
 .banner-image {
@@ -187,7 +158,6 @@ nav ul li a:hover {
 
 .banner-image-content {
   background-color: rgba(255, 255, 255, 0.171);
-  backdrop-filter: blur(5px);
   color: white;
   padding: 20px;
   width: 200px;
@@ -221,7 +191,6 @@ nav ul li a:hover {
 
 .banner-image-content-2 {
   background-color: rgba(255, 255, 255, 0.171);
-  backdrop-filter: blur(5px);
   padding: 20px;
   width: 200px;
   color: white;
@@ -459,8 +428,7 @@ main {
 }
 .table-title {
   font-weight: 600;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -540,6 +508,7 @@ select {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.068);
   display: flex;
+  background-image: linear-gradient(to bottom right, rgba(5, 5, 5, 0.089) , rgba(0, 0, 0, 0.137) , rgba(0, 0, 0, 0.8));
   justify-content: start;
   align-items: center;
   gap: 20px;
@@ -555,6 +524,9 @@ select {
 }
 span{
   color: rgb(230, 83, 60);
+}
+.column{
+  background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.089) , rgba(0, 0, 0, 0.137) , rgba(0, 0, 0, 0.8));
 }
 
 .tip-content p {
@@ -737,7 +709,7 @@ footer {
   .banner-image-content {
     width: 170px;
     height: 100px;
-    top: 90%;
+    top: 100%;
     left: 25%;
   }
   .banner-image-content-2 {
