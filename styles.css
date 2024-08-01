@@ -10,13 +10,12 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background-color: rgba(0, 0, 0, 0.884);
+  background-color: rgb(0, 0, 0);
 }
 
 .display-flex {
   display: flex;
 }
-
 
 .button {
   background-color: rgb(230, 83, 60);
@@ -53,7 +52,7 @@ body {
 }
 .section-heading h2 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 900;
   margin-top: 40px;
 }
 .section-heading p {
@@ -67,7 +66,11 @@ body {
 /* nav styles  */
 
 header {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.089) , rgba(0, 0, 0, 0.137));
+  background-image: linear-gradient(
+    360deg,
+    rgba(17, 17, 17, 0.774),
+    rgba(119, 119, 119, 0.137) 100%
+  );
 }
 
 .navbar {
@@ -158,6 +161,9 @@ nav ul li a:hover {
 
 .banner-image-content {
   background-color: rgba(255, 255, 255, 0.171);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
   color: white;
   padding: 20px;
   width: 200px;
@@ -191,6 +197,9 @@ nav ul li a:hover {
 
 .banner-image-content-2 {
   background-color: rgba(255, 255, 255, 0.171);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
   padding: 20px;
   width: 200px;
   color: white;
@@ -222,7 +231,6 @@ main {
   margin: 30px 0;
   border-radius: 20px;
   padding: 30px;
-  background-color: rgba(252, 252, 252, 0.014);
   text-align: center;
 }
 .change-habits-img img {
@@ -259,8 +267,8 @@ main {
 }
 
 .run-title {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 5rem;
+  font-weight: 900;
   margin-bottom: 20px;
 }
 
@@ -286,12 +294,11 @@ main {
   margin: 0 auto;
 }
 
-
-.row-1{
+.row-1 {
   display: grid;
   grid-template-columns: 30% 40% 30%;
 }
-.trainings-and-exercise-card-1 p{
+.trainings-and-exercise-card-1 p {
   height: 300px;
   background-color: rgba(6, 255, 209, 0.507);
   background-image: url(./images/exercise1.jpg);
@@ -300,25 +307,24 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.trainings-and-exercise-card-1{
+.trainings-and-exercise-card-1 {
   position: relative;
 }
-.train-ex-card1{
+.train-ex-card1 {
   position: absolute;
   bottom: 10px;
   left: 15px;
 }
 
-
-.trainings-and-exercise-card-2{
+.trainings-and-exercise-card-2 {
   position: relative;
 }
-.train-ex-card2{
+.train-ex-card2 {
   position: absolute;
   bottom: 240px;
   left: 15px;
 }
-.trainings-and-exercise-card-2 p{
+.trainings-and-exercise-card-2 p {
   height: 300px;
   background-color: rgba(255, 0, 0, 0.3);
   background-image: url(./images/exercise2.png);
@@ -328,17 +334,17 @@ main {
   background-repeat: no-repeat;
 }
 
-.trainings-and-exercise-card-3{
+.trainings-and-exercise-card-3 {
   position: relative;
 }
-.train-ex-card3{
+.train-ex-card3 {
   position: absolute;
   bottom: 10px;
   left: 15px;
 }
-.trainings-and-exercise-card-3 p{
+.trainings-and-exercise-card-3 p {
   height: 300px;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url(./images/exercise3.png);
   background-blend-mode: multiply;
   background-size: cover;
@@ -346,22 +352,22 @@ main {
   background-repeat: no-repeat;
 }
 
-.row-2{
+.row-2 {
   display: grid;
   grid-template-columns: 40% 25% 35%;
 }
 
-.trainings-and-exercise-card-4{
+.trainings-and-exercise-card-4 {
   position: relative;
 }
-.train-ex-card4{
+.train-ex-card4 {
   position: absolute;
   bottom: 240px;
   left: 480px;
 }
-.trainings-and-exercise-card-4 p{
+.trainings-and-exercise-card-4 p {
   height: 300px;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url(./images/exercise4.png);
   background-blend-mode: multiply;
   background-size: cover;
@@ -369,17 +375,17 @@ main {
   background-repeat: no-repeat;
 }
 
-.trainings-and-exercise-card-5{
+.trainings-and-exercise-card-5 {
   position: relative;
 }
-.train-ex-card5{
+.train-ex-card5 {
   position: absolute;
   bottom: 15px;
   left: 80px;
 }
-.trainings-and-exercise-card-5 p{
+.trainings-and-exercise-card-5 p {
   height: 300px;
-  background-color:rgba(68, 255, 0, 0.418);
+  background-color: rgba(68, 255, 0, 0.418);
   background-image: url(./images/exercise5.jpg);
   background-blend-mode: multiply;
   background-size: cover;
@@ -387,24 +393,23 @@ main {
   background-repeat: no-repeat;
 }
 
-.trainings-and-exercise-card-6{
+.trainings-and-exercise-card-6 {
   position: relative;
 }
-.train-ex-card6{
+.train-ex-card6 {
   position: absolute;
   bottom: 10px;
   left: 390px;
 }
-.trainings-and-exercise-card-6 p{
+.trainings-and-exercise-card-6 p {
   height: 300px;
-  background-color:rgba(0, 71, 255, 0.3);
+  background-color: rgba(0, 71, 255, 0.3);
   background-image: url(./images/exercise6.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 /* bmi calculator styles  */
 
@@ -484,7 +489,7 @@ select {
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.267);
 }
-.select{
+.select {
   width: 99%;
 }
 
@@ -508,13 +513,18 @@ select {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.068);
   display: flex;
-  background-image: linear-gradient(to bottom right, rgba(5, 5, 5, 0.089) , rgba(0, 0, 0, 0.137) , rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(5, 5, 5, 0.089),
+    rgba(0, 0, 0, 0.137),
+    rgba(0, 0, 0, 0.8)
+  );
   justify-content: start;
   align-items: center;
   gap: 20px;
 }
 
-.tip-content{
+.tip-content {
   width: 50%;
   padding: 20px;
 }
@@ -522,11 +532,16 @@ select {
   font-size: 3rem;
   margin: 15px 0;
 }
-span{
+span {
   color: rgb(230, 83, 60);
 }
-.column{
-  background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.089) , rgba(0, 0, 0, 0.137) , rgba(0, 0, 0, 0.8));
+.column {
+  background-image: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.089),
+    rgba(0, 0, 0, 0.137),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .tip-content p {
@@ -567,7 +582,7 @@ span{
 .team-member img {
   width: 480px;
   height: 400px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .team-member-desc {
@@ -658,8 +673,6 @@ footer {
     font-size: 1rem;
   }
 
-
-
   .navbar {
     padding: 15px 20px;
     max-width: 100%;
@@ -672,9 +685,6 @@ footer {
     color: white;
     font-size: 30px;
   }
-
-
-
 
   .banner-section {
     padding: 0px;
@@ -719,22 +729,22 @@ footer {
     left: 79%;
   }
 
-
-
-
   .change-habits-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-
-
-
   .run-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .run-title {
+    font-size: 2.5rem;
+  }
+  .run-desc {
+    font-size: 1rem;
   }
   .run-content {
     width: 100%;
@@ -750,29 +760,26 @@ footer {
     margin-left: 0;
   }
 
-
-
-
   .trainings-and-exercise-card-2,
-  .trainings-and-exercise-card-4{
+  .trainings-and-exercise-card-4 {
     display: none;
   }
-  .train-ex-card6{
+  .train-ex-card6 {
     left: 70px;
   }
   .train-ex-card1 h3,
   .train-ex-card3 h3,
   .train-ex-card5 h3,
-  .train-ex-card6 h3{
-    font-size: .8rem;
+  .train-ex-card6 h3 {
+    font-size: 0.8rem;
   }
   .trainings-and-exercise-card-1 p,
   .trainings-and-exercise-card-3 p,
   .trainings-and-exercise-card-5 p,
-  .trainings-and-exercise-card-6 p{
+  .trainings-and-exercise-card-6 p {
     height: 200px;
   }
-  .train-ex-card6 h3{
+  .train-ex-card6 h3 {
     left: 70px;
   }
   .row-1 {
@@ -781,9 +788,6 @@ footer {
   .row-2 {
     grid-template-columns: 55% 45%;
   }
-
-
-
 
   .bmi-calc-container {
     flex-direction: column;
@@ -799,8 +803,6 @@ footer {
     width: 100%;
   }
 
-
-
   .fitness-tips {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -810,27 +812,24 @@ footer {
     margin-bottom: 20px;
     border-radius: 10px;
   }
-  .tip-content{
+  .tip-content {
     width: 100%;
     padding: 0;
   }
   .tip-content h3 {
     font-size: 1.5rem;
   }
-  .column{
+  .column {
     flex-direction: column-reverse;
   }
-  
+
   .tip-content p {
     font-size: 1rem;
   }
-  .fitness-tip img{
+  .fitness-tip img {
     height: 300px;
     width: 100%;
   }
-
-
-
 
   .meet-our-team-content {
     grid-template-columns: 1fr;
@@ -839,9 +838,6 @@ footer {
     width: 100%;
     height: auto;
   }
-
-
-  
 
   .footer-container {
     padding: 20px;
@@ -858,5 +854,181 @@ footer {
   .footer-center {
     width: 100%;
     padding: 20px;
+  }
+}
+
+/* tablet responsive  */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+  .section-heading p {
+    font-size: 1.1rem;
+  }
+  header {
+    max-width: 100%;
+  }
+  .navbar {
+    padding: 15px 30px;
+    max-width: 100%;
+  }
+
+  .navbar h2 {
+    font-size: 30px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .banner-section {
+    padding: 0px;
+    max-width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .banner-content {
+    width: 100%;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-image img {
+    margin-left: 0px;
+    width: 350px;
+    position: relative;
+  }
+  .banner-image-content {
+    top: 145%;
+    left: 25%;
+  }
+  .banner-image-content-2 {
+    top: 100%;
+    left: 65%;
+  }
+
+  .change-habits-section {
+    max-width: 90%;
+  }
+  .change-habits-card {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .change-habits-content {
+    flex-wrap: wrap;
+  }
+
+  .run-section {
+    max-width: 90%;
+  }
+  .run-title {
+    font-size: 2.5rem;
+  }
+  .run-desc {
+    font-size: 1rem;
+  }
+  .run-content {
+    margin: 20px;
+  }
+
+  .run-image img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .trainings-and-exercise-section {
+    max-width: 90%;
+  }
+
+  .train-ex-card1 h3,
+  .train-ex-card2 h3,
+  .train-ex-card3 h3,
+  .train-ex-card4 h3,
+  .train-ex-card5 h3,
+  .train-ex-card6 h3 {
+    font-size: 1.2rem;
+  }
+  .trainings-and-exercise-card-1 p,
+  .trainings-and-exercise-card-2 p,
+  .trainings-and-exercise-card-3 p,
+  .trainings-and-exercise-card-4 p,
+  .trainings-and-exercise-card-5 p,
+  .trainings-and-exercise-card-6 p {
+    height: 200px;
+  }
+
+  .train-ex-card2 {
+    bottom: 140px;
+    left: 15px;
+  }
+
+  .train-ex-card4 {
+    bottom: 10px;
+    left: 50px;
+  }
+  .train-ex-card5 {
+    bottom: 15px;
+    left: 20px;
+  }
+  .train-ex-card6 {
+    bottom: 10px;
+    left: 70px;
+  }
+
+  .fitness-tips-section {
+    max-width: 90%;
+  }
+
+  .tip-content h3 {
+    font-size: 2rem;
+  }
+  .tip-content p {
+    font-size: 1rem;
+  }
+  .fitness-tip img {
+    height: 350px;
+  }
+
+  .meet-our-team-section {
+    max-width: 90%;
+  }
+  .meet-our-team-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-member img {
+    width: 320px;
+    height: 260px;
+  }
+
+  .footer-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer-right,
+  .footer-center {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .footer-center h2,
+  .footer-right h2 {
+    font-size: 2rem;
+  }
+
+  .social-media-icons i {
+    font-size: 1.5rem;
   }
 }
